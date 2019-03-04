@@ -1,0 +1,32 @@
+<!--
+  Generated template for the ListDataPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>List Data</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button block (click)="downloadCsvData()">Download Data</button>
+<ion-list>
+  <ion-item-sliding *ngFor="let item of data" >
+    <ion-item >
+      <p>NIK : {{item.nik}}</p>
+      <p>Nama : {{item.nama}}</p>
+      <p>Lat : {{item.lat}}</p>
+      <p>Lat : {{item.lng}}</p>
+    </ion-item>
+    <ion-item-options side="">
+      <button ion-button >
+        <ion-icon name="trash"></ion-icon>
+        
+      </button>
+    </ion-item-options>
+    
+  </ion-item-sliding>
+</ion-list>
+</ion-content>

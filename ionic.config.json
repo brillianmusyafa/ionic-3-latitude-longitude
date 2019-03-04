@@ -1,0 +1,7 @@
+{
+  "name": "latlongnew",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

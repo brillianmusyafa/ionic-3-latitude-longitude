@@ -1,0 +1,20 @@
+<ion-header>
+	<ion-navbar color="primary">
+		<ion-title>
+			BS Latitude Longitude
+		</ion-title>
+		<ion-buttons end>
+			<button ion-button (click)="addData()"><ion-icon name="add"></ion-icon> Add</button>
+		</ion-buttons>
+	</ion-navbar>
+</ion-header>
+
+<ion-content>
+	<button ion-button block color="secondary" (click)="lihatData()">List Data</button>
+	<div>Lat : {{lat}}</div>
+	<div>Long : {{lng}}</div>
+	<button ion-button icon-only (click)="getPosisi()">
+		<ion-icon name="add"></ion-icon> Posisi
+	</button>
+	<div #map id="map" class="peta"></div>
+</ion-content>
